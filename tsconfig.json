@@ -7,17 +7,20 @@
   //   "outDir": "dist",
   //   "rootDir": "src" // Add this line
   // },
-      "compilerOptions": {
-        "baseUrl": "./src",
-                "outDir": "dist",
-        "paths": {
-            "@controllers/*": [
-                "controllers/*"
-            ],
-            "@routes/*": [
-                "routes/*"
-            ]
-        },
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "baseUrl": "./src",
+    "outDir": "dist",
+    "paths": {
+      "@controllers/*": [
+        "controllers/*"
+      ],
+      "@routes/*": [
+        "routes/*"
+      ]
     },
-  "lib": ["es2015"]
+  },
+  "lib": [
+    "es2015"
+  ]
 }

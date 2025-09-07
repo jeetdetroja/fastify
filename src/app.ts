@@ -21,8 +21,8 @@ export class App {
   // Method to start the server
   public async start(): Promise<void> {
     try {
-      await this.fastify.listen({ port: 80, host: "127.0.0.1" });
-      this.fastify.log.info(`Server listening on http://127.0.0.1`);
+      await this.fastify.listen({ port: 3000, host: "127.0.0.1" });
+      this.fastify.log.info(`Server listening on http://127.0.0.1:3000`);
     } catch (err) {
       this.fastify.log.error(err);
       process.exit(1);
